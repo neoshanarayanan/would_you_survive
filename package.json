@@ -1,0 +1,22 @@
+{
+  "name": "would_you_survive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "read_csv.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neoshanarayanan/would_you_survive.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neoshanarayanan/would_you_survive/issues"
+  },
+  "homepage": "https://github.com/neoshanarayanan/would_you_survive#readme",
+  "dependencies": {
+    "papaparse": "^4.6.3"
+  }
+}
