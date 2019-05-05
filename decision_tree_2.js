@@ -1,3 +1,6 @@
+// author: Neosha
+
+
 var DecisionTree = require('decision-tree');
 
 var training_data = require('./train.js');

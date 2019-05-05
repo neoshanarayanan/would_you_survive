@@ -1,3 +1,5 @@
+// author: Jess Arbuckle
+
 var fare=1000//what the person inputs
 //average first class ticket $2,131.61
 //average second class ticket $528.51
