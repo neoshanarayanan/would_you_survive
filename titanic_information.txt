@@ -1,0 +1,24 @@
+﻿Author: Jess Arbuckle
+
+
+nformation about Demographics
+* The overall probability of survival for the titanic was 38.38%.
+* When the titanic sank the policy of “women and children first” was implemented, so if you were a women on the titanic you had about a 74.20% probability of a survival. Separately, if you were 10 years old or younger then you had a 59.38% probability of survival. 
+* Being above the age of 60 had one of the worst probability of survival at 22.72%. 
+* While being a women granted you the highest probability of survival, being a man gave you the lowest with only 18.89% surviving. This is because not only were women given first priority, but on portside no man was allowed to enter a lifeboat.
+* After being a man, being having paid less than $10, or $247.43 when accounting for inflation, with a probability of survival of 20.56%.
+* After being a women, having paid over $50, but less than $60, or over $1237.15, but less than $1,484.58 accounting for inflation, had the next best probability of survival with the percent surviving being 71.05%. People who paid over $60 also had a high survival percentage of 67.21%.
+* Along the lines of having paid more for your ticket people, who were in the first class also had a higher probability of survival than most with 62.96%.
+* Being in the third class had one of the worst probability of survival at 24.24%. Although cinematic depictions show third class citizens being locked under the ship and prevented from boarding lifeboats, this is not necessarily true. The way the ship was designed there were no lifeboats near the third class quarters. The third was also separated from the rest of the ship because it was for immigrants and the US was afraid of the spread of infectious disease.
+* The second classes probability of survival was in between the first class and third class at 47.28%.
+* There is not much of a difference in probability of the survival with the age brackets of 10-20, 20-30, 30-40, 40-50, and 50-60 with the probabilities of survival being between 38.265 and 44.52%.
+* The probability of survival of the fare brackets $10-20, $20-30 and $30-40 is all relatively the same with the probability of survival being 42.58%, 44.37% and 39.65% respectively.
+* Paying between $40-50 had a surprisingly low probability of survival being 25.00%. 
+
+
+Interesting Facts
+* https://www.thoughtco.com/titanic-timeline-1779210
+   * The Titanic departed from Southampton, England on April 10th at noon and arrived at Cherbourg, France later that day and then stopped at Queenstown, Ireland, before being its voyage across the Atlantic to NYC. 
+   * The Titanic was captained by Edward Smith.
+* There is a lot of disorder with the correlation between where the passengers embarked from and their probability of survival. Passengers leaving from Southampton had a 33.70% probability of survival, while passengers from Cherbourg had a 37.65% probability and passengers from Queensland had a 38.96% probability.
+* Survivors were picked up by the ship Carpathia, which was 58 miles away at the time the distress call was sent out.
