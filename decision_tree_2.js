@@ -1,4 +1,4 @@
-// author: Neosha
+// author: Neosha Narayanan
 
 
 var DecisionTree = require('decision-tree');
