@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/neoshanarayanan/would_you_survive#readme",
   "dependencies": {
+    "cors": "^2.8.5",
+    "decision-tree": "^0.3.1",
+    "express": "^4.16.4",
     "papaparse": "^4.6.3"
   }
 }

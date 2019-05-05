@@ -1,0 +1,1 @@
+// translates js file to html to put in table
