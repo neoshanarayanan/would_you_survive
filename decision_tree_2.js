@@ -1,16 +1,13 @@
 // author: Neosha Narayanan
+// classdecider function is from Jess Arbuckle (see classdecider.js)
 
 
 var DecisionTree = require('decision-tree');
 
 var training_data = require('./train.js');
 var testing_data = require('./test.js');
-var classdecider = require('./classdecider.js');
 
 var class_name = "Survived";
-
-
-
 
 var functions = {};
 
@@ -78,7 +75,7 @@ functions.predictSurvival = function(newpassenger){ // takes an object
 };
 
 
-
+// Jess wrote this
 functions.decideClass = function(fare){
     if(fare<=247.43){
         var classes=["Class1", "Class2", "Class3"]

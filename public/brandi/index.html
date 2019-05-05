@@ -151,16 +151,16 @@
 									</div>
 									<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="1500ms">
 											<div class="counters-item">
-												<strong>24%</strong>
+												<strong>47%</strong>
 												<!-- Set Your Number here. i,e. data-to="56" -->
-												<p>Third-Class Ticketholders</p>
+												<p>Second-Class Ticketholders</p>
 											</div>
 									</div>
 									<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="1800ms">
 											<div class="counters-item">
-												<strong>47%</strong>
+												<strong>24%</strong>
 												<!-- Set Your Number here. i,e. data-to="56" -->
-												<p>Second-Class Ticketholders</p>
+												<p>Third-Class Ticketholders</p>
 											</div>
 									</div>
 									<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="2100ms">
@@ -224,7 +224,7 @@
 								<br/>
 
 								<p>How many family members are you traveling with (parents and/or children)?</p>
-								<input type = "number" id = "Parch">
+								<input type = "number" id = "parch">
 
 								<br/>
 								<br/>
@@ -335,17 +335,23 @@
 			
 				var fare = document.getElementById("fare").value;
 				var age = document.getElementById("age").value;
+				var parch = document.getElementById("parch").value;
 				
 				var url = '/data/' + sex + '/' + fare + '/' + age;
 				var status   = document.getElementById('createStatus');
-		
+
+				var class_explanation = document.getElementById('class explanation');
+				var sex_explanation = document.getElementById('sex explanation');
+				var age_explanation = document.getElementById('age explanation');
+				var parch_explanation = document.getElementById('parch explanation');
+
 				superagent
 						.get(url)
 						.end(function(err, res){
 								if(err){
 										console.log(err);
 								}
-								if(sex == "option 1"){
+								if(sex != "male" && sex != "female"){
 									status.innerHTML = "Please fill out all the info correctly, including biological sex!";
 								}
 								if(fare < 0){
@@ -446,23 +452,25 @@
 						  <thead>
 							<tr>
 							  <th>Name</th>
-							  <th>Position</th>
-							  <th>Office</th>
+							  <th>Sex</th>
 							  <th>Age</th>
-							  <th>Start date</th>
-							  <th>Salary</th>
+							  <th>Fare</th>
+							  <th>Class</th>
+							 
 							</tr>
-						  </thead>
+							</thead>
+							
 						  <tfoot>
 							<tr>
 							  <th>Name</th>
-							  <th>Position</th>
-							  <th>Office</th>
+							  <th>Sex</th>
 							  <th>Age</th>
-							  <th>Start date</th>
-							  <th>Salary</th>
+							  <th>Fare</th>
+							  <th>Class</th>
+						
 							</tr>
-						  </tfoot>
+							</tfoot>
+							
 						  <tbody>
 							<tr>
 							  <td>Tiger Nixon</td>

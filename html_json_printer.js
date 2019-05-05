@@ -18,6 +18,9 @@ data.forEach(function(item){
 });
 
 // headers and footers are given by thead and tfoot before all the data entries
+// all data entries are encapsulated by <tbody></tbody>
 
 
-var headers = '<'
+// there shall be 5 categories: Name, Sex, Age, Fare, and Class
+
+// use single quotes 
