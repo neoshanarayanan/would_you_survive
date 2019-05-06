@@ -1,5 +1,5 @@
 // author: Jess Arbuckle
-
+// this file gave us all the stats and info
 
 list = require('./correcteddata.json')
 

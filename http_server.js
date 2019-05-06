@@ -4,6 +4,7 @@ var express = require('express');
 var app     = express();
 
 var decision_tree2 = require('./decision_tree_2.js');
+var survivalprobability = require('./survivalprobability.js');
 
 console.log(decision_tree2);
 
@@ -66,7 +67,24 @@ app.get('/data/:sex/:fare/:age/:parch', function(req, res){
             message = errorMessage;
         }
     res.send(message);
+
+
+
+
+    var result = survivalprobability.giveResult(fare, parch, sex, Pclass, age);
+    console.log(result);
+
+
+
+
+
+
+
+
+
 });
+
+// app.get
 
 
 
