@@ -68,18 +68,8 @@ app.get('/data/:sex/:fare/:age/:parch', function(req, res){
         }
     res.send(message);
 
-
-
-
     var result = survivalprobability.giveResult(fare, parch, sex, Pclass, age);
     console.log(result);
-
-
-
-
-
-
-
 
 
 });

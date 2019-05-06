@@ -1,3 +1,5 @@
+//author: Jess Arbuckle
+
 var list = require('./correcteddata.json');
 
 
