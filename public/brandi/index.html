@@ -252,6 +252,8 @@
 				
 								<p id = "resultsBelow">Your results will appear below.</p>
 								<h2 id ="createStatus"></h2>
+
+								<p id = "passengerMatch"></p>
 							</div>
 						</div>
 					</div>
@@ -304,6 +306,12 @@
 									
 								</div>
 
+								<h3>Decision Tree</h3>
+							</br>
+							<p>
+									To predict whether you would have survived, we used a decision tree. Decision trees are often used for classification - that is, using previous data to determine the "class" or status of a new piece of data. In this case, we are using real Titanic passenger data to classify whether you would have survived. For more information about how decision trees work, visit https://medium.com/@chiragsehra42/decision-trees-explained-easily-28f23241248.
+							</p>
+						</br>
 								<h3>Bayes Theorem</h3>
 							</br>
 								<p>
@@ -359,6 +367,7 @@
 
 
 				var resultsBelow = document.getElementById("resultsBelow");
+				var matchingPassenger = document.getElementById("passengerMatch");
 
 				superagent
 						.get(url)
@@ -399,6 +408,9 @@
 									if(pclass == "3"){
 										class_explanation.innerHTML = "Based on your fare, you'd probably be in second class. You would be a lot less likely to survive the sinking of the Titanic than a first or second class passenger, although the reason for this is disputed by historians.";
 									}
+
+									var result = giveresult(fare, parch, sex, pclass, age);
+									matchingPassenger.innerHTML = result;
 
 								}
 		
@@ -516,6 +528,55 @@
         }
 
         return classtype;
+}
+
+
+function giveresult(fare, parch, age, sex, pclass){
+    person=[]
+  
+    persons=[]
+    list.data.forEach(function(item){
+        if(fare>1484){
+              if(item.Fare>fare/24.74-7){
+                if(item.Parch>=parch-1 && item.Parch>=parch+1){
+                    if(item.Age<=age+7 && item.Age>age-7){
+                      if(item.Sex==sex){
+                           if(item.Pclass==pclass){
+                                 person.push(item)
+                                 }
+ 
+                           }
+                 }
+             }
+       }
+      
+           }else{
+           if(item.Fare<=fare/24.74+7 && item.Fare>fare/24.74-7){
+                   if(item.Parch>=parch-1 && item.Parch>=parch+1){
+                         if(item.Age<=age+7 && item.Age>age-7){
+                           if(item.Sex==sex){
+                                if(item.Pclass==pclass){
+                                      person.push(item)
+                                      }
+      
+                                }
+                      }
+                  }
+        }
+      }
+      })
+      person.forEach(function(item){
+          if(item.Survived==1){
+              persons.push(item)
+          }
+      })
+      personnum=person.length
+      personsnum=persons.length
+    if(person.length==0){console.log("Sorry there was no one in the data with your attributes")}
+    else{
+        console.log("percent survive random person="+personsnum/personnum)
+    }
+   return personsnum/personnum;
 }
 		</script>
 
